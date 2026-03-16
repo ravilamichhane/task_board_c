@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=https://taskfile.dev/schema.json
+
+version: '3'
+
+vars:
+  GREETING: Hello, world!
+
+tasks:
+  compile:
+    cmds:
+      - gcc -o taskmanager main.c
+  run:
+    cmds:
+      - gcc -o taskmanager main.c
+      - ./taskmanager
+
+
+  temp:
+    cmds:
+      - gcc -o temp main.c
+      - ./temp
+      - rm temp
+    
